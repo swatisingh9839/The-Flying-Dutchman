@@ -34,92 +34,54 @@ a {
 .container {
     max-width: 960px;
     margin: 0 auto;
+    border: 1px solid black;
 }
 
-.bar-options {
+.order_sheet {
+    display: none;
+}
+
+.order_title {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1;
+    border: 1px solid black;
+    padding: 10px;
+    justify-items: center;
 }
-.bar-options button {
-    grid-column: 1/4;
-}
-.bar-products {
+
+.ordered_items {
     display: flex;
     flex-direction: column;
     height: 50vh;
     overflow: scroll;
 }
 
-.product {
+.ordered_item {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     border: 1px solid black;
     padding: 10px;
     cursor: pointer;
 }
-.product-extra {
-    display: none;
+
+.add_item {
+    cursor: pointer;
 }
-.product-expanded {
+
+.pay {
+    display: grid;
     grid-column: 1/4;
-    margin-top: 20px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
-}
-
-.product-expanded button {
-    grid-column: 3/ 3;
-    cursor: pointer;
-}
-
-.selected {
-    background-color: #ddd;
-}
-
-.current-order {
-    padding: 20px;
-    border: 1px solid black;
-}
-.current-order h3 {
-    text-align: center;
-    border-bottom: 1px solid black;
-}
-
-.order {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around;
-}
-.order-sheet{
-    align-items: center;
-}
-.order-product {
-    border: 1px solid black;
-    padding: 20px;
-}
-
-.order-nav {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.active-order {
-    padding: 10px;
-    text-align: center;
-    flex: 4;
-    border: 1px solid black;
-    border-top: none;
-}
-.checkout {
-    flex: 1;
-    text-align: center;
+    grid-template-columns: repeat(4, 1fr);
     border: 1px solid black;
     padding: 10px;
-    border-top: none;
-    border-left: none;
 }
-.checkout a {
-    color: black;
+
+button {
+    width: fit-content;
+    /*background-color: #fff;*/
+    border-radius: 3px;
+    border: 1px solid #c4c4c4;
+    background-color: transparent;
+    font-size: 1rem;
+    /*color: #333;*/
 }
