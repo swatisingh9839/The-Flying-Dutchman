@@ -39,6 +39,7 @@ a {
 
 .order_sheet {
     display: none;
+    border-color: #c4c4c4;
 }
 
 .order_title {
@@ -51,6 +52,7 @@ a {
 
 .ordered_items {
     display: flex;
+    align-content: center;
     flex-direction: column;
     height: 50vh;
     overflow: scroll;
@@ -62,8 +64,15 @@ a {
     border: 1px solid black;
     padding: 10px;
     cursor: pointer;
-}
+    align-self: center;
+    margin: auto;
+    width: 600px;
 
+}
+.add-undo{
+    align-items: end;
+
+}
 .add_item {
     cursor: pointer;
 }
@@ -84,4 +93,15 @@ button {
     background-color: transparent;
     font-size: 1rem;
     /*color: #333;*/
+}
+.container-main{
+    width: content-box;
+    max-width: 960px;
+    align-content: center;
+    margin: auto;
+
+}
+.add_items{
+    border: #c4c4c4;
+    align-items: end;
 }
