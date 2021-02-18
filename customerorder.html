@@ -1,13 +1,15 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/html">
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html"
+      xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style_customer.css" />
+    <link rel="stylesheet" href="orderstyle.css" />
     <title>The Flying Dutchman</title>
 </head>
 <body>
+<div class="container">
 <nav>
     <div class="language">
         <h3>FLAG</h3>
@@ -15,12 +17,18 @@
 
     <div class="title"><h1>The Flying Dutchman</h1></div>
     <div class="login"><a href="/customerLogin.html">Login</a></div>
-</nav>
-<div class="container">
-   <div class="order-sheet">
-    <div class="order_title">
-        <div class="order">Your Order</div>
+    <div class="callout" data-closable>
+        <button class="close-button" aria-label="Close alert" type="button" data-close>
+            <span aria-hidden="true">&times;</span>
+        </button>
     </div>
+</nav>
+
+<div class="container">
+    <div class="order-sheet">
+        <div class="order_title">
+            <div class="order">Your Order</div>
+        </div>
 
         <div class="ordered_items">
             <div class="ordered_item">
@@ -47,30 +55,40 @@
                 <div class="product-price">442.00</div>
                 <button>Del</button>
             </div>
-            <div class="ordered_item">
+            <div class="add_items">
+                <p align="bottom">
                 <div class="add_item">Add Item + </div>
-            </div>
-            </div>
-
-            <div class="pay">
-                <div></div>
-                <div></div>
-                <div><h3>Total</h3></div>
-                <div><h3>1768 Kr</h3></div>
-
-                <div>Pay At Table</div>
-                <input type="checkbox" id="Pay at Table">
-                <div></div>
-                <div></div>
-                <div>Pay at Bar</div>
-                <input type="checkbox" id="Pay at bar">
-                <div></div>
-                <button>Order</button>
+                </p>
+                <div class="add-undo">
+                <p align="right">
+                <button class="button">Undo</button>
+                <button class="button">Redo</button>
+                </p>
                 </div>
             </div>
+        </div>
 
+        <div class="pay">
+            <div></div>
+            <div></div>
+            <div><h3>Total</h3></div>
+            <div><h3>1768 Kr</h3></div>
+
+            <div>Pay At Table</div>
+            <input type="checkbox" id="Pay at Table">
+            <div></div>
+            <div></div>
+            <div>Pay at Bar</div>
+            <input type="checkbox" id="Pay at bar">
+            <div></div>
+            <button>Order</button>
         </div>
     </div>
+    </div>
+
 </div>
+</div>
+</div>
+
 </body>
 </html>
