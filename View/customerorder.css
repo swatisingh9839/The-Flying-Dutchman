@@ -1,0 +1,68 @@
+:root {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	height: 100%;
+	overflow: visible;
+}
+button {
+	width: fit-content;
+	/*background-color: #fff;*/
+	border-radius: 3px;
+	border: 1px solid #c4c4c4;
+	background-color: transparent;
+	font-size: 1rem;
+	/*color: #333;*/
+}
+nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20px;
+}
+.container {
+	max-width: 960px;
+	margin: 0 auto;
+}
+.order_sheet {
+	display: none;
+	border-color: #c4c4c4;
+}
+.order_title {
+	display: grid;
+	grid-template-columns: 1;
+	border: 1px solid black;
+	padding: 10px;
+	justify-items: center;
+}
+.ordered_items {
+	max-width: 960px;
+	margin: 0 auto;
+	border: 1px solid black;
+}
+.item_list {
+	display: flex;
+	align-content: center;
+	flex-direction: column;
+	height: 50vh;
+	overflow: scroll;
+}
+.ordered_item {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	border: 1px solid black;
+	padding: 10px;
+	cursor: pointer;
+	justify-items: end;
+	margin: auto;
+	width: 80%;
+}
+.pay {
+	display: grid;
+	grid-column: 1/4;
+	grid-template-columns: repeat(4, 1fr);
+	border: 1px solid black;
+	padding: 10px;
+}
