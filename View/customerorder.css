@@ -25,6 +25,7 @@ nav {
 .container {
 	max-width: 960px;
 	margin: 0 auto;
+	border: 1px solid black;
 }
 .order_sheet {
 	display: none;
@@ -38,9 +39,10 @@ nav {
 	justify-items: center;
 }
 .ordered_items {
-	max-width: 960px;
-	margin: 0 auto;
-	border: 1px solid black;
+	margin-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%;
 }
 .item_list {
 	display: flex;
@@ -55,14 +57,22 @@ nav {
 	border: 1px solid black;
 	padding: 10px;
 	cursor: pointer;
-	justify-items: end;
-	margin: auto;
-	width: 80%;
+	justify-items: normal;
+}
+.payment {
+	border: 1px solid black;
 }
 .pay {
 	display: grid;
 	grid-column: 1/4;
 	grid-template-columns: repeat(4, 1fr);
-	border: 1px solid black;
 	padding: 10px;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	justify-items: normal;
+}
+
+.total {
+	font-size: 30px;
 }
