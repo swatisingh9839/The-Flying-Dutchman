@@ -33,6 +33,7 @@ const getBeers = () => {
 				DB2.spirits[i].ursprunglandnamn,
 				DB2.spirits[i].forpackning,
 			]);
+			
 		}
 	}
 	//
@@ -123,7 +124,7 @@ const setOrderList = (orderid) => {
                     		<div class="product-name">${item.namn}</div>
 							<div class="product-percentage">${item.alkoholhalt}</div>
 							<div class="product-price">${item.prisinklmoms}</div>
-							<button>Del</button>
+							<button id="div-button"  onclick="delOrderlist(this)">Del</button>
 						`;
 						orderContainer.appendChild(order_item);
 					}
@@ -147,3 +148,11 @@ const dummyOrders = () => {
 	collector.push({orderid:1,tableno:7,itemid:items});
 	return collector;
 };
+
+// Delete the list of order
+const delOrderlist = (orders) => {
+	orders.parentElement.remove();
+	updateTotal();
+};
+
+
